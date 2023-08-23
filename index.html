@@ -27,6 +27,14 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- JQuery CDN -->
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+  <!-- JQuery Form Validation CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- =============================================================================================================== -->
 </head>
 
@@ -552,7 +560,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://api.web3forms.com/submit" method="POST" role="form" class="email-form">
+            <form action="https://api.web3forms.com/submit" method="POST" role="form" class="email-form" id="mail-form">
               <input type="hidden" name="access_key" value="3bcf8421-9d79-48ac-8046-68105135f5ba">
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -568,12 +576,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" id="btn-submit">Send Message</button></div>
             </form>
 
           </div>
@@ -614,9 +617,12 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Form Validation JS File -->
+  <script src="./assets/js/Form-Validation.js"></script>
 
 </body>
 
